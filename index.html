@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNI'S Trade Plaza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">UNI'S <span>TRADE PLAZA</span></div>
+    <div class="nav-links">
+      <button class="nav-btn" onclick="showPage('marketplace')">Marketplace</button>
+      <button class="nav-btn" onclick="showPage('values')">Trade Values</button>
+    </div>
+  </nav>
+
+  <main id="home" class="page active">
+    <section class="hero">
+      <div class="logo">
+        <div class="logo-mark">U</div>
+        <div class="logo-title">UNI'S</div>
+        <div class="logo-subtitle">TRADE PLAZA</div>
+      </div>
+
+      <p class="tagline">Your hub for trading services.</p>
+
+      <a class="discord-btn" href="https://discord.gg/qXQkrEFXFm" target="_blank" rel="noopener">
+        <span class="discord-icon">✦</span>
+        Join the Discord
+      </a>
+    </section>
+  </main>
+
+  <main id="marketplace" class="page">
+    <section class="coming-soon">
+      <div class="status-icon">🛠</div>
+      <h1>Marketplace</h1>
+      <p>We're working on it!</p>
+      <span>Our marketplace is currently under development. Check back soon.</span>
+      <button class="back-btn" onclick="showPage('home')">Back Home</button>
+    </section>
+  </main>
+
+  <main id="values" class="page">
+    <section class="coming-soon">
+      <div class="status-icon">📊</div>
+      <h1>Trade Values</h1>
+      <p>We're working on it!</p>
+      <span>Trade values are currently being worked on. We'll have them available soon.</span>
+      <button class="back-btn" onclick="showPage('home')">Back Home</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
